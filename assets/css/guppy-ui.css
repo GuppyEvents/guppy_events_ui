@@ -1,0 +1,89 @@
+.community-sidebar {
+    padding-top: 30px;
+}
+
+.community-sidebar-photo {
+    height: 190px;
+}
+
+.community-sidebar-name {
+    height: 50px;
+}
+
+.community-sidebar-navigation {
+    height: 50px;
+}
+
+.society {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.society .photo-wrapper {
+    margin: 0 auto 20px;
+    display: inline-block;
+    max-width: 100%;
+}
+.society .photo-wrapper.rounded {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.community-navigation-link:hover,
+.community-navigation-link:focus,
+.community-navigation-link:active{
+    color: #fe4918;
+}
+
+.community-navigation-link {
+    display: inline-block;
+    padding: 7px 0;
+    font-family: "PT Sans Caption", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.26em;
+    color: #262627;
+}
+.community-navigation-link.dropdown-toggle {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.community-dropdown-menu {
+    float: none;
+    width: 100%;
+    top: 100%;
+    min-width: 0;
+    padding: 0;
+    list-style: none;
+    font-size: inherit;
+    color: #000000;
+    border: none;
+    border-radius: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.community-navigation-item {
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+
+.community-content-header {
+    height: 275px;
+}
+
+.community-content-header img{
+    height: 100%;
+    width: 100%;
+}
+
+.community-content-body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.guppy-section {
+    position: relative;
+}
