@@ -98,6 +98,11 @@
     box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
 }
 
+.community-event-card.past{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
 .community-event-card .photo-wrapper {
     margin: 0 auto 20px;
     display: inline-block;
@@ -110,7 +115,7 @@
 
 .community-event-card .community-event-card-main a{
     color: #0278b8;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 .community-event-card .community-event-card-main-header:before{
@@ -134,6 +139,44 @@
 .community-event-card .community-event-card-main-header{
     position: relative;
     line-height: 0;
+}
+
+.community-event-card .community-event-card-main-header .community-event-card-ticket{
+    background-color: hsla(0,0%,100%,.85);
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    color: #282c35;
+    box-sizing: border-box;
+    padding: 2px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+}
+
+.community-event-card .community-event-card-main-header .community-event-card-hourglass{
+    background-color: hsla(0,0%,100%,.85);
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    color: #282c35;
+    box-sizing: border-box;
+    padding: 2px 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: inline-block;
+}
+
+.community-event-card .community-event-card-main-body .community-event-card-venue{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #666a73;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 5px 0 0;
 }
 
 .community-event-card-main-header-image {
