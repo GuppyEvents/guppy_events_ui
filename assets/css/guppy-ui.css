@@ -263,3 +263,20 @@
     box-sizing: border-box;
     text-align: center;
 }
+
+/* ----------------------------------------------------------------------------
+    Event Page Header
+---------------------------------------------------------------------------- */
+.event-content {
+    position: relative;
+    top: 40px;
+}
+
+.event-content .event-content-header .event-content-header-image{
+    border-left-right-radius: 4px;
+}
+
+.event-content .event-content-header .event-content-header-detail {         3333
+    border-top-right-radius: 4px;
+    background-color: rgba(0, 255, 255, 0.9);
+}
