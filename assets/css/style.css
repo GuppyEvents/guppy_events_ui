@@ -5323,6 +5323,15 @@ button[type="submit"] .loading {
 
 
 /* CUSTOM CSS */
+.btn.btn-outline-clr:focus{
+    color: #fe4918;
+}
+.btn.btn-outline-clr:active{
+    color: #FFF;
+}
+.btn.btn-outline-clr:hover{
+    color: #FFF;
+}
 .fa:before{
     letter-spacing: 0;
 }
@@ -5511,6 +5520,165 @@ button[type="submit"] .loading {
     background: #555;
     color: #eee;
 }
+.ge-event-search-section{
+    background: url("../img/community/search-bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 400px;
+}
+.ge-search-form-area{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.25);
+    background: -webkit-linear-gradient( rgba(255,255,255, 0.9) 0%, white 50%);
+    background: linear-gradient( rgba(2255,255,255, 0.9) 0%, white 50%);
+    position: relative;
+    margin-top: -100px;
+    padding: 50px 10px 20px;
+}
+.ge-search-form fieldset {
+    text-align: center;
+}
+.ge-search-form-area input{
+    margin-bottom: 0;
+}
+section.section.ge-events-list-section{
+    padding-top: 20px;
+}
+.ge-events-list-title{
+    margin-bottom: 30px;
+    font-size:30px;
+    font-weight: normal;
+    margin-left: 15px;
+    color: #444;
+}
+.ge-events-box{
+    margin-bottom: 30px;
+    border: 1px solid #e8ebef;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: .2s cubic-bezier(0,.2,.4,1);
+    -moz-transition: .2s cubic-bezier(0,.2,.4,1);
+    transition: .2s cubic-bezier(0,.2,.4,1);
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1)
+    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1)
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1)
+}
+.ge-events-box:hover{
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 8px 0 rgba(0,0,0,.05);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.05);
+    text-decoration: none;
+    transform: scale(1.01);
+}
+.ge-events-box-link{
+    display: block;
+}
+.ge-events-box-link:hover{
+    text-decoration: none !important;
+}
+.ge-events-box-img{
+    display: block;
+    height: 175px;
+    overflow: hidden;
+}
+.ge-events-box-date{
+    display: block;
+    padding: 0 10px;
+    margin: 10px 0 0;
+    color: #999;
+    font-weight: 300;
+    font-size: 14px;
+}
+.ge-events-box-title{
+    color: #282c35;
+    font-size: 17px;
+    line-height: 20px;
+    max-height: 40px;
+    font-weight: 500;
+    letter-spacing: 0;
+    padding: 0 10px;
+    margin: 0 0 10px;
+    height: 40px;
+    overflow: hidden;
+}
+.ge-events-box-location{
+    display: block;
+    padding: 0 10px;
+    margin: 10px 0 5px;
+    color: #999;
+    font-weight: 300;
+    font-size: 14px;
+    height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ge-event-box-footer{
+    position: relative;
+    height: 42px;
+    overflow: hidden;
+    line-height: 42px;
+    padding-right: 80px;
+    border-top: 1px solid #e8ebef;
+    padding-left: 10px;
+}
+.ge-event-box-footer ul, .ge-event-box-footer li{
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+}
+.ge-event-box-footer-tags li{
+    margin-right: 5px;
+}
+.ge-event-box-footer-tags li a{
+    color: #999;
+}
+.ge-event-box-footer-tags li a:hover{
+    color: #fe4918;
+    text-decoration: none;
+}
+.ge-event-box-footer-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 42px;
+    width: auto;
+    overflow: hidden;
+}
+.ge-event-box-footer-btn li{
+    float: left;
+}
+.ge-event-box-footer-btn a{
+    display: block;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    border-left:1px solid #e8ebef;
+    color: #666;
+}
+.ge-event-box-footer-btn a:hover{
+    color: #fe4918;
+    text-decoration: none;
+}
+.ge-event-box-footer-btn a i{
+    color: #666;
+}
+.ge-event-box-footer-btn a:hover i{
+    color: #fe4918;
+    text-decoration: none;
+}
+.ge-event-box-footer-btn i.fa{
+    font-size: 16px;
+}
+.ge-event-box-footer-btn i.fa:first-child{
+    margin: 0
+}
+.ge-events-list-more .btn{
+    letter-spacing: normal;
+    font-size: 15px;
+}
+
+
 
 
 
@@ -5640,6 +5808,10 @@ button[type="submit"] .loading {
     }
     .ge-calendar-cell-day-number{
         font-size: 14px;
+    }
+
+    .ge-search-form-area input{
+        margin-bottom: 15px;
     }
 }
 @media (max-width: 480px) {
