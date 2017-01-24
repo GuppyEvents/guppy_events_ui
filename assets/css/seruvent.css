@@ -1,9 +1,6 @@
 .ge-cs-bg{
     background-image: url(../img/backgrounds/cs.jpg);
 }
-.heading-block{
-    padding: 110px 0;
-}
 .ge-colored-text{
     letter-spacing: 1px;
     color:#fe4918;
@@ -19,6 +16,9 @@
 .counter-block.counter-block-no-border.has-separator .counter-content > .count:after{
     top: 70px;
 }
+.ge-counter-footer{
+    margin-top: 60px;
+}
 .modal-window h5{
     font-weight: normal;
 }
@@ -26,7 +26,124 @@
     padding-left: 0;
     padding-right: 0;
 }
+section#community-cover{
+    padding: 0;
+}
+.community-cover-bg{
+    background-image: url(../img/backgrounds/community-cover-bg.jpg);
+}
+.community-cover-bg.overlay:before {
+    background-color: #262627;
+    opacity: 0.5;
+}
+.community-cover-area{
+    height: 400px;
+}
+.community-cover-title-relative{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+.community-cover-title-area{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 40px;
+    padding: 10px 0;
+}
+.community-cover-title-area h3{
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+.community-cover-logo-relative{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    text-align: center;
+}
+.community-cover-logo-area{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    margin: 0 auto;
+}
+.community-cover-logo-img,
+.community-cover-logo-img img {
+    width: 160px;
+    height: 160px;
+    -webkit-border-radius: 120px;
+    -moz-border-radius: 120px;
+    border-radius: 120px;
+}
+.community-page-content{
+    padding-top: 50px;
+}
+.community-left-sidebar a{
+    font-size: 16px;
+}
+.community-left-sidebar a.list-group-item.active,
+.community-left-sidebar a.list-group-item.active:hover,
+.community-left-sidebar a.list-group-item.active:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #fe4918;
+    border-color: #fe4918;
+}
+.community-left-sidebar a.list-group-item.active:after,
+.community-left-sidebar a.list-group-item:hover:after,
+.community-left-sidebar a.list-group-item:focus:after {
+    font-size: 18px;
+    content: "\f0da";
+    line-height: 1.5;
+    float: right;
+    vertical-align: middle;
+    font-family: "FontAwesome";
+}
+.community-content-row{
+    margin-bottom: 30px;
+}
+.community-content-row h5{
+    font-weight: 500;
+}
+.community-contact-link i{
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+.community-right-content .list > li .icon:first-child,
+.community-right-content .list > li .fa:first-child {
+    margin-right: 10px;
+}
 
+
+
+@media (max-width: 991px) {
+
+    .counter-block{
+        width: 160px;
+    }
+    .community-cover-logo-area{
+        width: 120px;
+        height: 120px;
+    }
+    .community-cover-logo-img,
+    .community-cover-logo-img img {
+        width: 120px;
+        height: 120px;
+    }
+    .community-cover-title-area h3{
+        font-size: 30px;
+    }
+}
 @media (max-width: 767px) {
     body.ge-coming-soon-page {
         padding-top: 0;
@@ -40,6 +157,57 @@
         margin: 0;
     }
     .counters-wrapper{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+    }
+    .ge-coming-soon-title{
+        font-size: 32px;
+        margin: 60px 0;
+    }
+    .counter-box .counter-content > .count{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .counter-block{
+        width: auto;
+    }
+    section#community-cover{
+        padding-bottom: 80px;
+    }
+    .community-cover-area{
+        height: 300px;
+    }
+    .community-cover-logo-relative{
+        height: 210px;
+    }
+    .community-cover-title-relative{
+        height: 95px;
+    }
+    .community-cover-title{
+        text-align: center;
+    }
+    .community-cover-title-area{
+        padding: 0;
+        overflow: hidden;
+        top: 0;
+        bottom: auto;
+    }
+    .community-cover-title-area h3{
+        font-size: 26px;
+    }
+
+}
+@media (max-width: 479px) {
+    .ge-coming-soon-title{
+        font-size: 32px;
+        margin: 50px 0;
+    }
+    .community-cover-title-area{
+        max-height: 90px;
+        overflow: hidden;
+    }
+    .community-cover-title-area h3{
+        font-size: 24px;
     }
 }
+
+
