@@ -61,4 +61,21 @@ $(window).resize(function() {
   $('#ge-calendar-cell-div .list-vertical li a').width($('#ge-calendar-cell-div td').width());
 });
 
-/*DIALOG FX POPUP*/
+/*STICKY ACTION BUTTON DIV*/
+function sticky_relocate() {
+    var window_top = $(window).scrollTop() + 100;
+    var div_top = $('#sticky-anchor').offset().top;
+    if (window_top > div_top) {
+        $('#sticky').addClass('stick');
+        $('#sticky-anchor').height($('#sticky').outerHeight() + 20);
+        $('#sticky').width($('#sticky-anchor').outerWidth() - 22);
+    } else {
+        $('#sticky').removeClass('stick');
+        $('#sticky-anchor').height(0);
+        $('#sticky').css ("width","100%")
+    }
+}
+$(function() {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+});
