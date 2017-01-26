@@ -1,3 +1,6 @@
+.ge-event-calendar table{
+    margin-bottom: 0px;
+}
 .ge-cs-bg{
     background-image: url(../img/backgrounds/cs.jpg);
 }
@@ -272,6 +275,32 @@ li.active a.ge-menu-group-item{
 }
 .navigation-list a:hover i{
     color: #fe4918;
+}
+.error-box-content-area{
+    margin: 60px auto;
+}
+.error-box-content-header{
+    margin: -20px -20px 10px;
+    padding:10px 20px;
+    border-bottom: 1px solid #E5E6E9;
+    font-weight: bold;
+}
+.error-box-content-text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.error-box-content-text p{
+    line-height: 1.5;
+}
+.error-box-content-footer{
+    margin: 0 -20px -20px;
+    padding:10px 20px;
+    border-top: 1px solid #E5E6E9;
+    overflow: hidden;
+}
+.error-box-content-footer a i{
+    display: inline-block;
+    margin-right: 8px;
 }
 
 
