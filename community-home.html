@@ -78,8 +78,25 @@
 								</ul>
 							</li>
 						</ul>
+                        <ul class="navigation-list pull-right light-text">
+							<li class="navigation-item"><a href="#" class="navigation-link" data-modal-link="ge-register"><i class="fa fa-pencil-square-o"></i>Kayıt Ol</a></li>
+							<li class="navigation-item"><a href="#" class="navigation-link" data-modal-link="ge-login"><i class="fa fa-user"></i>Giriş</a></li>
+						</ul>
 
-						<a href="#" class="pull-right buy-btn">Buy Tickets</a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav pull-right">
+                                <li class="dropdown" id="menuLogin"> <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+                                    <div class="dropdown-menu" style="padding:17px;">
+                                        <form class="form" id="formLogin">
+                                            <input name="username" id="username" type="text" placeholder="Username">
+                                            <input name="password" id="password" type="password" placeholder="Password">
+                                            <br>
+                                            <button type="button" id="btnLogin" class="btn">Login</button>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 					</div>
 				</div>
 			</div>
@@ -240,76 +257,71 @@
 		</div>
 	</section>
 
-	<div class="modal-window" data-modal="email-ticket" style="background-color: rgba(2, 2, 2, 0.85);">
+	<div class="modal-window" data-modal="ge-login" style="background-color: rgba(2, 2, 2, 0.85);">
 		<div class="modal-box small animated" data-animation="zoomIn" data-duration="700">
 			<span class="close-btn icon icon-office-52"></span>
-
-			<h5 class="align-center"><span class="highlight">Event Registration</span></h5>
-
-			<form class="form registration-form align-center">
+			<h5 class="align-center"><span class="highlight">Giriş Yapın</span></h5>
+			<form class="form ge-login-form align-center">
 
 				<fieldset class="col-sm-12">
-					<label for="first_name">First Name</label>
-					<input id="first_name" name="first_name" type="text">
-				</fieldset>
-
-				<fieldset class="col-sm-12">
-					<label for="last_name">Last Name</label>
-					<input id="last_name" name="last_name" type="text">
-				</fieldset>
-
-				<fieldset class="col-sm-12">
-					<label for="email">Email</label>
+					<label for="email">Kullanıcı adı</label>
 					<input id="email" name="email" type="email">
-				</fieldset>
-
-				<fieldset class="col-sm-6">
-					<label for="pass1">Ticket type</label>
-					<select id="pass1" name="pass1">
-						<option value="" selected disabled>-- Select --</option>
-						<option value="0">Early Bird</option>
-						<option value="1">Silver Pass</option>
-						<option value="2">Gold Pass</option>
-						<option value="3">Ultimate Mega Ultra Legendary Pass</option>
-					</select>
-				</fieldset>
-
-				<fieldset class="col-sm-6">
-					<label for="pass2"># tickets</label>
-					<select id="pass2" name="pass2">
-						<option value="a">Variant A</option>
-						<option value="b">Variant B</option>
-						<option value="c">Variant C</option>
-						<option value="d">Variant D</option>
-						<option value="e">Variant E</option>
-						<option value="f" disabled>Variant F</option>
-						<option value="g">Variant G</option>
-						<option value="h">Variant H</option>
-						<option value="i">Variant I</option>
-						<option value="j">Variant J</option>
-						<option value="k">Variant K</option>
-						<option value="l">Variant L</option>
-						<option value="m">Variant M</option>
-					</select>
-				</fieldset>
-
-				<fieldset class="col-sm-12">
-					<input id="privacy" name="privacy" type="checkbox"><label for="privacy">I read & agree with <a href="#">Terms of service</a> </label>
+                </fieldset>
+                <fieldset class="col-sm-12">
+					<label for="email">Şifre</label>
+					<input id="password" name="password" type="password">
+                </fieldset>
+                <fieldset class="col-sm-12">
+					<input id="remember" name="remember" type="checkbox"><label for="privacy"> Beni hatırla</label>
 					<br />
 					<br />
 				</fieldset>
 
-				<input type="submit" value="submit" class="btn">
+				<input type="submit" value="Giriş" class="btn">
 			</form>
 
 		</div>
 	</div>
 
-	<div class="modal-window" data-modal="0" style="background-color: rgba(2, 2, 2, 0.85);">
-		<div class="modal-box iframe-box iframe-video">
+	<div class="modal-window" data-modal="ge-register" style="background-color: rgba(2, 2, 2, 0.85);">
+		<div class="modal-box small animated" data-animation="zoomIn" data-duration="700">
 			<span class="close-btn icon icon-office-52"></span>
+			<h5 class="align-center"><span class="highlight">Kayıt Formu</span></h5>
+			<form class="form ge-registration-form align-center">
 
-			<iframe src="https://www.youtube.com/embed/goH-Pv1w6xo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				<fieldset class="col-sm-12">
+					<label for="first_name">Adınız</label>
+					<input id="first_name" name="first_name" type="text">
+				</fieldset>
+
+				<fieldset class="col-sm-12">
+					<label for="last_name">Soyadınız</label>
+					<input id="last_name" name="last_name" type="text">
+				</fieldset>
+
+				<fieldset class="col-sm-12">
+					<label for="email">Eposta</label>
+					<input id="email" name="email" type="email">
+				</fieldset>
+
+				<fieldset class="col-sm-12">
+					<label for="pass1">Kayıt Türü</label>
+					<select id="pass1" name="pass1">
+						<option value="" selected disabled>-- Seçiniz --</option>
+						<option value="0">Topluluk Yöneticisi</option>
+						<option value="1">Toplulu Üyesi</option>
+					</select>
+				</fieldset>
+
+				<fieldset class="col-sm-12">
+					<input id="privacy" name="privacy" type="checkbox"><label for="privacy"> <a href="#">Kullanım sözleşmesini</a> okudum, kabul ediyorum.</label>
+					<br />
+					<br />
+				</fieldset>
+
+				<input type="submit" value="Kayıt" class="btn">
+			</form>
+
 		</div>
 	</div>
 

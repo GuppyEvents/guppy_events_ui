@@ -223,7 +223,7 @@ li.active a.ge-menu-group-item{
     position: fixed;
     top: 100px;
     display: block;
-    z-index: 10000;
+    z-index: 999;
 }
 .ge-community-action-btn{
     font-size: 14px;
@@ -260,6 +260,18 @@ li.active a.ge-menu-group-item{
 }
 .ge-community-content-row h5{
     font-weight: 500;
+}
+.ge-login-form, .ge-register-form{
+    padding-left: 0;
+    padding-right: 0;
+}
+.navigation-list a i{
+    color: #FFF;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.navigation-list a:hover i{
+    color: #fe4918;
 }
 
 

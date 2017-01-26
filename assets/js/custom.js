@@ -63,7 +63,7 @@ $(window).resize(function() {
 
 /*STICKY ACTION BUTTON DIV*/
 function sticky_relocate() {
-    var window_top = $(window).scrollTop() + 100;
+    var window_top = $(window).scrollTop() + $("header .header-wrapper").height();
     var div_top = $('#sticky-anchor').offset().top;
     if (window_top > div_top) {
         $('#sticky').addClass('stick');
