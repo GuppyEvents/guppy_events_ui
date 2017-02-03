@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="Etkinliklere bir tıkla ulaşabileceğiniz seruvent ile yakında sizlerleyiz">
+    <meta name="keywords" content="etkinlik topluluk üniversite serüven">
+    <meta name="author" content="Kemal Sami KARACA">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <title>Seruvent Çok Yakında</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/lib/animate.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom-animations.css">
+
+    <!-- font links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,400italic,500italic&subset=latin,latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/lib/font-lineicons.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/lib/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style_media.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/guppy-ui.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/seruvent.css">
+
+    <!--[if lt IE 9]>
+    <script src='../assets/js/html5shiv.js'></script>
+    <script src='../assets/js/respond.min.js'></script>
+    <![endif]-->
+
+</head>
+
+<body class="ge-coming-soon-page">
+    <div class="preloader-mask">
+        <div class="preloader"></div>
+    </div>
+
+    <section id="hero" class="hero-section ge-cs-bg bg-cover window-height light-text">
+        <ul class="socials-nav">
+            <li class="socials-nav-item"><a href="https://twitter.com/SERUVENTcom" target="_blank"><span class="fa fa-twitter"></span></a></li>
+            <li class="socials-nav-item"><a href="#"><span class="fa fa-facebook"></span></a></li>
+            <li class="socials-nav-item"><a href="#"><span class="fa fa-google-plus"></span></a></li>
+        </ul>
+        <div class="heading-block centered-block align-center">
+            <div class="container">
+                <h5 class="ge-coming-soon-title">ÇOK <span class="ge-colored-text">YAKINDA...</span></h5>
+
+                <!-- Countdown start -->
+                <div class="row counters-wrapper countdown">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="col-sm-3">
+                            <div class="counter-block counter-block-no-border counter-block-white has-separator">
+                                <div class="counter-box">
+                                    <div class="counter-content">
+                                        <span class="count">{dnn}</span>
+
+                                        <p class="title">GÜN</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="counter-block counter-block-no-border counter-block-white has-separator">
+                                <div class="counter-box">
+                                    <div class="counter-content">
+                                        <span class="count">{hnn}</span>
+
+                                        <p class="title">SAAT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="counter-block counter-block-no-border counter-block-white has-separator">
+                                <div class="counter-box">
+                                    <div class="counter-content">
+                                        <span class="count">{mnn}</span>
+
+                                        <p class="title">DAKİKA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="counter-block counter-block-no-border counter-block-white">
+                                <div class="counter-box">
+                                    <div class="counter-content">
+                                        <span class="count">{snn}</span>
+
+                                        <p class="title">SANİYE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h6 class="thin base-font">Etkinliklere ve kulüplere bir tıkla ulaşabileceğiniz web sitemiz ile <strong>yakında sizlerleyiz.</strong></h6>
+                <div class="btns-container">
+                    <a href="#" class="btn btn-md" data-modal-link="email-ticket">ABONE OLUN</a>
+                    <a href="#" class="btn btn-md" style="display: none;">Etkinlikler</a>
+                    <a href="#" class="btn btn-md" style="display: none;">Kulüpler</a>
+                </div>
+
+                <!-- countdown end -->
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-window" data-modal="email-ticket" style="background-color: rgba(2, 2, 2, 0.85);">
+        <div class="modal-box small animated" data-animation="zoomIn" data-duration="700">
+            <span class="close-btn icon icon-office-52"></span>
+            <h5 class="align-center"><span class="highlight">Topluluğumuza Sende Katıl!</span></h5>
+
+            <form name="user" method="post" class="form registration-form align-center">
+                <fieldset class="col-sm-12">
+                    <label for="first_name">Adınız</label>
+                    <input type="text" id="user_name" name="user[name]" required="required" placeholder="İsim" oninput="checkValidation(this , &quot;İsim boş bırakılamaz&quot;)" oninvalid="checkValidation(this , &quot;İsim boş bırakılamaz&quot;)">
+                </fieldset>
+
+                <fieldset class="col-sm-12">
+                    <label for="last_name">Soyadınız</label>
+                    <input type="text" id="user_surname" name="user[surname]" required="required" placeholder="Soyadı" oninput="checkValidation(this , &quot;Soyadı boş bırakılamaz&quot;)" oninvalid="checkValidation(this , &quot;Soyadı boş bırakılamaz&quot;)">
+                </fieldset>
+
+                <fieldset class="col-sm-12">
+                    <label for="email">Eposta</label>
+                    <input type="email" id="user_email" name="user[email]" required="required" placeholder="Bilkent Mail Adresiniz" oninput="checkValidation(this , &quot;@ug.bilkent.edu.tr içermeli&quot;)" oninvalid="checkValidation(this , &quot;@ug.bilkent.edu.tr içermeli&quot;)" onblur="fillUsernameAndPasswordField(this)">
+                </fieldset>
+
+                <fieldset class="col-sm-12" style="display: none;">
+                    <label for="username">Kullanıcı Adı</label>
+                    <input type="text" id="user_username" name="user[username]" required="required" placeholder="Kullanıcı Adı" oninput="checkValidation(this , &quot;Kullanıcı adını boş bırakmayınız&quot;)" oninvalid="checkValidation(this , &quot;Kullanıcı adını boş bırakmayınız&quot;)">
+                </fieldset>
+
+                <fieldset class="col-sm-12" style="display: none;">
+                    <label for="password">Şifre</label>
+                    <input type="password" id="user_password_first" name="user[password][first]" required="required" placeholder="Şifre" oninput="checkValidation(this , &quot;Şifre boş bırakılamaz&quot;)" oninvalid="checkValidation(this , &quot;Şifre boş bırakılamaz&quot;)">
+                </fieldset>
+
+                <fieldset class="col-sm-12" style="display: none;">
+                    <label for="repassword">Şifre Tekrar</label>
+                    <input type="password" id="user_password_second" name="user[password][second]" required="required" placeholder="Şifre Tekrar" oninput="checkValidation(this , &quot;Şifre tekrarı boş bırakılamaz&quot;)" onchange="checkPasswordValidation(this , &quot;Şifreleriniz uyuşmamaktadır&quot;)">
+                </fieldset>
+
+                <fieldset class="col-sm-12">
+                    <input type="checkbox" id="user_termsAccepted" name="user[termsAccepted]" required="required" value="1"><label for="privacy"><a href="#">Kullanım şartlarını</a> okudum, kabul ediyorum.</label>
+                    <br>
+                </fieldset>
+
+                <fieldset class="col-sm-12">
+                    <br>
+                    <!--<div class="g-recaptcha" data-sitekey="6LcQ_BIUAAAAAC4umj2JN3kmsyikRt9lGxCUNGds"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LcQ_BIUAAAAAC4umj2JN3kmsyikRt9lGxCUNGds&amp;co=aHR0cDovL3d3dy5sb2NhbC5ndXBweS5jb20udHI6ODA.&amp;hl=tr&amp;v=r20170126104253&amp;size=normal&amp;cb=m6uin3wgox2e" title="recaptcha widget'ı" width="304" height="78" frameborder="0" scrolling="no" name="undefined"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>-->
+                    <br>
+                </fieldset>
+
+                <input id="submit" name="submit" type="submit" value="Kayıt" class="btn">
+
+                <input type="hidden" id="user__token" name="user[_token]" value="AjeB_FzY9-VoJMMrr2KrXxa8_lYi-ZZaiGLWCRfR2YI"></form>
+
+        </div>
+    </div>
+
+    <script src='https://www.google.com/recaptcha/api.js?hl=tr'></script>
+    <script src='../assets-plugins/jQuery/jQuery-2.2.0.min.js'></script>
+    <script src='../assets/js/bootstrap.min.js'></script>
+    <script src='../assets/js/jquery.validate.min.js'></script>
+    <script src='../assets/js/toastr.min.js'></script>
+    <script src='../assets/js/jquery.waypoints.min.js'></script>
+    <script src='../assets/js/jquery.appear.js'></script>
+    <script src='../assets/js/jquery.plugin.js'></script>
+    <script src='../assets/js/jquery.countTo.js'></script>
+    <script src='../assets/js/jquery.countdown.js'></script>
+    <script src='../assets/js/masonry.pkgd.min.js'></script>
+    <script src='../assets/js/modal-box.js'></script>
+    <script src='../assets/js/guppy-theme.js'></script>
+    <script src='../assets/js/guppy.js'></script>
+
+    <script>
+
+        // google analytics
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-90806940-1', 'auto');
+        ga('send', 'pageview');
+
+
+        // local process
+        var error_msg = '';
+        var success_msg = '';
+
+        function checkPasswordValidation(input , message){
+            if(input.value=="" || input.value!=document.getElementById('user_password_first').value){
+                input.setCustomValidity(message);
+            }else{
+                input.setCustomValidity("");
+            }
+        }
+
+        function checkValidation(input , message) {
+            if(input.value==""){
+                input.setCustomValidity(message);
+            }else{
+                input.setCustomValidity("");
+            }
+        }
+
+        function fillUsernameAndPasswordField(input){
+            $('#user_username').val(input.value);
+            $('#user_password_first').val(input.value);
+            $('#user_password_second').val(input.value);
+        }
+
+        $(function () {
+            // -- Operation Result Message
+            if(success_msg){
+                toastr.success(success_msg);
+            }else if(error_msg){
+                toastr.error(error_msg);
+            }
+
+        });
+
+    </script>
+
+    </body>
+</html>
