@@ -529,6 +529,9 @@ body.ge-search-page .tab-content{
 .ge-event-location h5{
     margin-top: 10px !important;
 }
+.ge-calendar-left-sidebar{
+    padding: 0;
+}
 
 
 

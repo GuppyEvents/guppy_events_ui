@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Home</title>
+
+	<link rel="stylesheet" type="text/css" href="../assets/css/lib/animate.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/custom-animations.css">
+
+    <!-- font links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,400italic,500italic&subset=latin,latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/lib/font-lineicons.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/lib/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style_media.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/guppy-ui.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/seruvent.css">
+
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!--[if lt IE 9]>
+    <script src='../assets/js/html5shiv.js'></script>
+    <script src='../assets/js/respond.min.js'></script>
+    <![endif]-->
+</head>
+
+<body class="calendar-page">
+	<header class="header header-black fixed">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="col-sm-2 col-xs-12 navigation-header">
+                    <a href="#" class="logo">
+                    <img src="" alt="Seruvent" width="120" height="40" class="retina-hide">
+                    <img src="" alt="Seruvent" width="120" height="40" class="retina-show">
+                    </a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="col-sm-10 col-xs-12 navigation-container">
+                    <div id="navigation" class="navbar-collapse collapse">
+                        <ul class="navigation-list pull-left light-text">
+                            <li class="navigation-item"><a href="#" class="navigation-link">Etkinlikler</a></li>
+                            <li class="navigation-item"><a href="#" class="navigation-link">Kulüpler</a></li>
+                            <li class="navigation-item navigation-search">
+                                <a class="navigation-link" style="width: 320px; position: relative; top: -10px;">
+                                    <input id="guppy-search" type="text" placeholder="Etkinlikleri, toplulukları ve diğer şeyleri ara">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="navigation-list pull-right light-text">
+                            <li class="navigation-item"><a href="#" class="navigation-link">Kayıt</a></li>
+                            <li class="navigation-item"><a href="#" class="navigation-link">Giriş</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="">
+		<div class="container">
+            <div class="ge-community-left-sidebar col-md-2 col-sm-3">
+                <div class="ge-left-sidebar-filter">
+                    <div class="ge-filter-box ge-filter-by">
+                        <h6>TÜR</h6>
+                        <div class="ge-filter-form-area">
+                            <form action="">
+                                <div class="radio">
+                                    <label><input type="radio" name="filter-type" id="tumu" value="tümü" checked> Tümü </label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="filter-type" id="kultur-sanat" value="kültür-sanat"> Kültür / Sanat </label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="filter-type" id="spor-gezi-aktivite" value="spor-gezi-aktivite"> Spor / Gezi / Aktivite</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="filter-type" id="bilim-teknoloji" value="bilim-teknoloji"> Bilim / Teknoloji </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ge-filter-box ge-filter-location">
+                        <h6>ÜNİVERSİTE</h6>
+                        <div class="ge-filter-form-area">
+                            <form action="">
+                                <select class="form-control">
+                                    <option>Tüm Üniversiteler <span>(23)</span></option>
+                                    <option>Bilkent <span>(9)</span></option>
+                                    <option>ODTÜ <span>(9)</span></option>
+                                    <option>Yıldırım Beyazıt <span>(6)</span></option>
+                                    <option>Hacettepe <span>(5)</span></option>
+                                    <option>Gazi <span>(3)</span></option>
+                                    <option>Ankara <span>(4)</span></option>
+                                    <option>Başkent <span>(2)</span></option>
+                                    <option>Ufuk <span>(1)</span></option>
+                                    <option>Atılım <span>(1)</span></option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ge-filter-box">
+                        <ul class="ge-community-sidebar-menu ge-menu-group">
+                           <li class="active"><a href="#" class="ge-menu-group-item">Genel Bilgi</a></li>
+                           <li><a href="#" class="ge-menu-group-item">Etkinlikler</a></li>
+                           <li><a href="#" class="ge-menu-group-item">Üyeler</a></li>
+                        </ul>
+                    </div>
+                    <div class="ge-community-sidebar-action">
+                        <button class="ge-community-action-btn" type="submit"><i class="fa fa-plus"></i>Etkinlik Oluştur</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="ge-calendar-right-content col-md-10 col-sm-9">
+                <div class="ge-event-calendar-area ge-content-box">
+                    <div class="ge-event-calendar-action" id="ge-event-calendar-action">
+                        <div class="ge-select-month-btn pull-left">
+                            <div>
+                                <button class="btn btn-outline-clr btn-sm"><i class="fa fa-chevron-left"></i></button>
+                                <button class="btn btn-outline-clr btn-sm"><i class="fa fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                        <div class="ge-select-month-name pull-left">
+                            <span class="ge-select-month-name-box">
+                                OCAK
+                            </span>
+                           <span class="ge-select-month-year-box">
+                                2017
+                            </span>
+                        </div>
+                        <div class="ge-other-action pull-right">
+                            <button class="btn btn-sm btn-white-text"><i class="fa fa-calendar-plus-o"></i></button>
+                        </div>
+                    </div>
+                    <div class="ge-event-calendar" id="ge-event-calendar">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Pzt</th>
+                                    <th>Sal</th>
+                                    <th>Çar</th>
+                                    <th>Per</th>
+                                    <th>Cum</th>
+                                    <th>Cmt</th>
+                                    <th>Paz</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number ge-other-day-number">30</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#" class="ge-calendar-cell-add-event-link">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Bilmem ne fest" rel="tooltip">
+                                                        <img src="../../assets/img/community/guppy_bilkent_01.png" alt="">
+                                                    </a>
+                                                </li>
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Galatasaray Osmanlıspor Maçı" rel="tooltip">
+                                                        <img src="../../assets/img/community/bilkentli-aslanlar.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number ge-other-day-number">31</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">1</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Bilmem ne fest" rel="tooltip">
+                                                        <img src="../../assets/img/community/edebiyat.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">2</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Fotoğraf kulübü şehir turu" rel="tooltip">
+                                                        <img src="../../assets/img/community/foto.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">3</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">4</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">5</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">6</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                            </ul>
+                                        </div></td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">7</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">8</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">9</span>
+                                            <!--<span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>-->
+                                            <ul class="list-inline">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td class="active">
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">10</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-inline">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">11</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-inline">
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Taraftar yürüyüşü" rel="tooltip">
+                                                        <img src="../../assets/img/community/bilkentli-aslanlar.jpg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="ACM Etkinliği" rel="tooltip">
+                                                        <img src="../../assets/img/community/acm.png" alt="">
+                                                    </a>
+                                                </li>
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Wingtusun" rel="tooltip">
+                                                        <img src="../../assets/img/community/wingtsun.jpeg" alt="">
+                                                    </a>
+                                                </li>
+                                                <li class="ge-event-item more-item">
+                                                    <a href="#" class="ge-event-item-link" title="+4 daha" rel="tooltip">
+                                                        <span>+4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">12</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-inline">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">13</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">14</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Bilkent Topluluğu Gezi Organizasyonu" rel="tooltip">
+                                                        Bilkent Topluluğu Gezi Organizasyonu
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">15</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">16</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Bilkent Topluluğu Gezi Organizasyonu" rel="tooltip">
+                                                        Bilkent Topluluğu Gezi Organizasyonu
+                                                    </a>
+                                                </li>
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Bilkent Topluluğu Gezi Organizasyonu" rel="tooltip">
+                                                        Bilkent Topluluğu Gezi Organizasyonu
+                                                    </a>
+                                                </li>
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Bilkent Topluluğu Gezi Organizasyonu" rel="tooltip">
+                                                        Bilkent Topluluğu Gezi Organizasyonu
+                                                    </a>
+                                                </li>
+                                                <li class="ge-event-item more-item">
+                                                    <a href="#" class="ge-event-item-link" title="+5 daha" rel="tooltip">
+                                                        +5 Daha
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">17</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">18</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">19</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Bilkent Topluluğu Gezi Organizasyonu" rel="tooltip">
+                                                        Bilkent Topluluğu Gezi Organizasyonu
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">20</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">21</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">22</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">23</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">24</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">25</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">26</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">27</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">28</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">29</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Bilkent Topluluğu Gezi Organizasyonu" rel="tooltip">
+                                                        Bilkent Topluluğu Gezi Organizasyonu
+                                                    </a>
+                                                </li>
+                                                <li class="ge-event-item">
+                                                    <a href="#" class="ge-event-item-link" title="Bilkent Topluluğu Gezi Organizasyonu" rel="tooltip">
+                                                        Bilkent Topluluğu Gezi Organizasyonu
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">30</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number">31</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number ge-other-day-number">1</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="ge-calendar-cell-div" id="ge-calendar-cell-div">
+                                            <span class="ge-calendar-cell-day-number ge-other-day-number">2</span>
+                                            <span class="ge-calendar-cell-add-event">
+                                                <i class="fa fa-plus"></i><a href="#">Oluştur</a>
+                                            </span>
+                                            <ul class="list-vertical">
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</section>
+
+
+	<script src='../assets-plugins/jQuery/jQuery-2.2.0.min.js'></script>
+    <script src='../assets/js/bootstrap.min.js'></script>
+    <script src='../assets/js/jquery.validate.min.js'></script>
+    <script src='../assets/js/toastr.min.js'></script>
+    <script src='../assets/js/jquery.waypoints.min.js'></script>
+    <script src='../assets/js/jquery.appear.js'></script>
+    <script src='../assets/js/jquery.plugin.js'></script>
+    <script src='../assets/js/jquery.countTo.js'></script>
+    <script src='../assets/js/jquery.countdown.js'></script>
+    <script src='../assets/js/masonry.pkgd.min.js'></script>
+    <script src='../assets/js/modal-box.js'></script>
+    <script src='../assets/js/guppy-theme.js'></script>
+    <script src='../assets/js/guppy.js'></script>
+    <script src='../assets/js/custom.js'></script>
+
+    <!-- jquery ui -->
+    <!-- datepicker used -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- ckeditor used -->
+    <script src="https://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+</body>
+</html>
